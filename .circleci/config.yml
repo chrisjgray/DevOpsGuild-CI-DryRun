@@ -39,7 +39,7 @@ jobs:
 
       # run tests!
       - run:
-        name: run Unit tests
+          name: run Unit tests
           command: |
             . venv/bin/activate
             python HelloWorldTests.py
