@@ -38,6 +38,11 @@ jobs:
           key: v1-dependencies-{{ checksum "requirements.txt" }}
 
       # run tests!
+      - run:
+        name: run Unit tests
+          command: |
+            . venv/bin/activate
+            python HelloWorldTests.py
 
       - store_artifacts:
           path: test-reports
